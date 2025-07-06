@@ -1,12 +1,82 @@
-# React + Vite
+# Blog Uygulaması
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern bir blog uygulaması React, Vite ve Tailwind CSS kullanılarak geliştirilmiştir.
 
-Currently, two official plugins are available:
+## 🚀 Özellikler
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern UI/UX**: Tailwind CSS ile responsive tasarım
+- **API Entegrasyonu**: JSONPlaceholder API'den blog postları
+- **Component Yapısı**: Modüler ve yeniden kullanılabilir bileşenler
+- **Hover Efektleri**: Smooth geçişler ve interaktif elementler
+- **Responsive Tasarım**: Mobil ve desktop uyumlu
 
-## Expanding the ESLint configuration
+## 🛠️ Teknolojiler
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 19.1.0** - Modern React hooks ve functional components
+- **Vite** - Hızlı build tool ve development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Axios** - HTTP client for API calls
+- **React Icons** - Icon library
+- **React Router** - Client-side routing (kurulum gerekli)
+
+## 📦 Kurulum
+
+```bash
+# Projeyi klonlayın
+git clone [repository-url]
+cd blog
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Development server'ı başlatın
+npm run dev
+```
+
+## 🔧 Geliştirme
+
+```bash
+# Development modunda çalıştır
+npm run dev
+
+# Production build
+npm run build
+
+# Build'i önizle
+npm run preview
+
+# Linting
+npm run lint
+```
+
+## 📁 Proje Yapısı
+
+```
+src/
+├── components/
+│   └── PostsCard.jsx      # Blog post kartı bileşeni
+├── pages/
+│   └── Home.jsx          # Ana sayfa
+├── App.jsx               # Ana uygulama bileşeni
+└── main.jsx             # Uygulama giriş noktası
+```
+
+## 🎨 Bileşenler
+
+### PostsCard
+- Blog postlarını kart formatında gösterir
+- Hover efektleri ile interaktif
+- Responsive tasarım
+- API'den gelen verileri render eder
+
+### Home
+- Ana sayfa bileşeni
+- API'den postları çeker
+- Grid layout ile postları düzenler
+
+## 🔌 API
+
+Uygulama [JSONPlaceholder](https://jsonplaceholder.typicode.com/) API'sini kullanır:
+- **Endpoint**: `https://jsonplaceholder.typicode.com/posts`
+- **Limit**: İlk 12 post gösterilir
+- **Resimler**: Picsum Photos'dan rastgele resimler
